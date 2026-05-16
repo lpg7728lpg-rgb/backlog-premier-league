@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKLOG PREMIER LEAGUE 🏆</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <!-- Background Particles -->
+    <div class="particles">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+        <div class="particle p4"></div>
+    </div>
+
+    <!-- Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker" id="ticker-content">
+            <!-- Ticker items injected via JS -->
+        </div>
+    </div>
+
+    <!-- Navigation / Top Bar -->
+    <nav class="top-bar">
+        <div class="logo">BPL <span>2026</span></div>
+        <button id="admin-login-btn" class="glow-btn"><i class="fas fa-lock"></i> Admin</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1 class="glitch-text" data-text="BACKLOG PREMIER LEAGUE 🏆">BACKLOG PREMIER LEAGUE 🏆</h1>
+        <p class="subtitle">Where academic warriors fight for survival.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Quick Stats & Roast -->
+        <section class="action-section">
+            <div class="glass-panel roast-generator">
+                <h3><i class="fas fa-fire"></i> Random Roast Generator</h3>
+                <p id="roast-display">Click the button to obliterate someone's self-esteem.</p>
+                <button id="roast-btn" class="glow-btn danger"><i class="fas fa-skull"></i> Generate Roast</button>
+            </div>
+            
+            <div class="glass-panel hall-of-shame">
+                <h3><i class="fas fa-crown"></i> Hall of Shame (Top Scorer)</h3>
+                <div id="top-shame" class="shame-content">
+                    <!-- Injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Leaderboard Table -->
+        <section class="leaderboard-section">
+            <h2 class="section-title">Official Rankings</h2>
+            <div class="table-container glass-panel">
+                <table id="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Current Backs</th>
+                            <th>Upcoming (Expected)</th>
+                            <th>Cleared</th>
+                            <th>Points</th>
+                            <th>Status</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-body">
+                        <!-- Rows injected via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Player Cards -->
+        <section class="player-cards-section">
+            <h2 class="section-title">Player Profiles</h2>
+            <div class="cards-grid" id="cards-grid">
+                <!-- Cards injected via JS -->
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <h2 class="section-title">Analytics & Predictions</h2>
+            <div class="charts-grid">
+                <div class="chart-container glass-panel">
+                    <h3>Top Back Holders</h3>
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div class="chart-container glass-panel">
+                    <h3>Survival vs Failure Ratio</h3>
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fake Sponsors -->
+        <section class="sponsors-section">
+            <h3 class="sponsors-title">Proudly Sponsored By</h3>
+            <div class="sponsors-flex">
+                <div class="sponsor">Powered by Grace Marks™</div>
+                <div class="sponsor">Revaluation Dept.</div>
+                <div class="sponsor">Backbenchers Assoc.</div>
+                <div class="sponsor">Midnight Coffee Co.</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Admin Modal -->
+    <div id="admin-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-btn" id="close-modal">&times;</span>
+            
+            <div id="password-screen">
+                <h2>Admin Access</h2>
+                <p>Enter the legendary password to edit history.</p>
+                <input type="password" id="admin-pass" placeholder="Password...">
+                <button id="login-submit" class="glow-btn">Login</button>
+                <p id="login-error" class="error-text"></p>
+            </div>
+
+            <div id="admin-dashboard" class="hidden">
+                <h2>Admin Dashboard</h2>
+                <p>Manage the academic warriors.</p>
+                
+                <div class="admin-actions">
+                    <button id="add-player-btn" class="glow-btn success"><i class="fas fa-plus"></i> Add Player</button>
+                    <button id="reset-data-btn" class="glow-btn danger"><i class="fas fa-trash"></i> Reset Data</button>
+                    <button id="copy-data-btn" class="glow-btn" title="Copy changes to save them permanently to the file"><i class="fas fa-copy"></i> Make Permanent</button>
+                </div>
+
+                <div class="edit-list" id="edit-list">
+                    <!-- Edit rows injected via JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sound Effects -->
+    <audio id="sfx-roast" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3"></audio>
+    <audio id="sfx-success" src="https://assets.mixkit.co/active_storage/sfx/2000/2000-preview.mp3"></audio>
+    <audio id="sfx-error" src="https://assets.mixkit.co/active_storage/sfx/2955/2955-preview.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
