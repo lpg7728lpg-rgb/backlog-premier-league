@@ -1,64 +1,92 @@
 // Initial Mock Data
 const initialData = [
     {
-        id: 1,
-        name: "Rohit",
-        avatar: "https://i.pravatar.cc/150?u=rohit",
-        currentBacks: 3,
-        expectedBacks: 2,
-        clearedBacks: 0,
-        quote: "I study only after the exam finishes.",
-        survivalChance: 20
+        "id": 1,
+        "name": "ishu nayak",
+        "avatar": "https://i.pravatar.cc/150?u=1",
+        "currentBacks": 5,
+        "expectedBacks": 4,
+        "clearedBacks": 0,
+        "quote": "bc ye ufm se kese bachu??",
+        "survivalChance": -100,
+        "title": "Revaluation Warrior"
     },
     {
-        id: 2,
-        name: "Aman",
-        avatar: "https://i.pravatar.cc/150?u=aman",
-        currentBacks: 1,
-        expectedBacks: 0,
-        clearedBacks: 2,
-        quote: "Bro, trust me, this semester is mine.",
-        survivalChance: 80
+        "id": 2,
+        "name": "babulal",
+        "avatar": "https://i.pravatar.cc/150?u=2",
+        "currentBacks": 0,
+        "expectedBacks": 3,
+        "clearedBacks": 0,
+        "quote": "me ni de rha paper....",
+        "survivalChance": -69,
+        "title": "Revaluation Warrior"
     },
     {
-        id: 3,
-        name: "Vikash",
-        avatar: "https://i.pravatar.cc/150?u=vikash",
-        currentBacks: 5,
-        expectedBacks: 3,
-        clearedBacks: 1,
-        quote: "Degree is just a piece of paper. Backlogs are emotions.",
-        survivalChance: 5
+        "id": 3,
+        "name": "jatin ",
+        "avatar": "https://i.pravatar.cc/150?u=3",
+        "currentBacks": 1,
+        "expectedBacks": 0,
+        "clearedBacks": 0,
+        "quote": "are paper ke 1 din pehle padh lunga",
+        "survivalChance": 50,
+        "title": "Semester Slayer"
     },
     {
-        id: 4,
-        name: "Neha",
-        avatar: "https://i.pravatar.cc/150?u=neha",
-        currentBacks: 0,
-        expectedBacks: 0,
-        clearedBacks: 0,
-        quote: "Why do you guys even fail?",
-        survivalChance: 99
+        "id": 4,
+        "name": "tanmay ",
+        "avatar": "https://i.pravatar.cc/150?u=4",
+        "currentBacks": 1,
+        "expectedBacks": 0,
+        "clearedBacks": 0,
+        "quote": "bc ye focp me back kese aagyi.....?",
+        "survivalChance": 100,
+        "title": "Dean’s Nightmare"
     },
     {
-        id: 5,
-        name: "Karan",
-        avatar: "https://i.pravatar.cc/150?u=karan",
-        currentBacks: 2,
-        expectedBacks: 1,
-        clearedBacks: 1,
-        quote: "Internal marks ruined my life.",
-        survivalChance: 50
+        "id": 5,
+        "name": "loki",
+        "avatar": "https://i.pravatar.cc/150?u=5",
+        "currentBacks": 0,
+        "expectedBacks": 2,
+        "clearedBacks": 0,
+        "quote": "gand fatti padi he bhya ji",
+        "survivalChance": 100,
+        "title": "Assignment Copier"
     },
     {
-        id: 6,
-        name: "Rahul",
-        avatar: "https://i.pravatar.cc/150?u=rahul",
-        currentBacks: 4,
-        expectedBacks: 2,
-        clearedBacks: 0,
-        quote: "Syllabus is out of syllabus.",
-        survivalChance: 15
+        "id": 6,
+        "name": "manish",
+        "avatar": "https://i.pravatar.cc/150?u=6",
+        "currentBacks": 0,
+        "expectedBacks": 1,
+        "clearedBacks": 0,
+        "quote": "mere pass or bhi career options he.....",
+        "survivalChance": 69,
+        "title": "Semester Slayer"
+    },
+    {
+        "id": 7,
+        "name": "hemant",
+        "avatar": "https://i.pravatar.cc/150?u=7",
+        "currentBacks": 0,
+        "expectedBacks": 0,
+        "clearedBacks": 0,
+        "quote": "katayi gand ghis ghis ke garda fardiya ,,, no back",
+        "survivalChance": 100,
+        "title": "Internal Marks Beggar"
+    },
+    {
+        "id": 8,
+        "name": "ayush",
+        "avatar": "https://i.pravatar.cc/150?u=8",
+        "currentBacks": 0,
+        "expectedBacks": 1,
+        "clearedBacks": 0,
+        "quote": "bc ye iit kanpur phone kyu ni utha ri....., ",
+        "survivalChance": 100,
+        "title": "Hall Ticket Survivor"
     }
 ];
 
